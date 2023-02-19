@@ -1,0 +1,60 @@
+.search {
+  background: #fefefe;
+  box-shadow: 5px -3px 4px rgba(0, 0, 0, 0.25),
+    inset 3px -3px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+/* product variations input  */
+
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"]:checked + label span {
+  border-radius: 50%;
+}
+input[type="radio"]:checked + label .green {
+  border: 2px solid #59c727;
+}
+input[type="radio"]:checked + label .cyan {
+  border: 2px solid #1bc2a3;
+}
+
+input[type="radio"]:checked + label .blue {
+  border: 2px solid #103f62;
+}
+
+input[type="radio"]:checked + label .purple {
+  border: 2px solid #501962;
+}
+
+label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+label:hover span {
+  transform: scale(1.25);
+}
+label span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 50%;
+}
+label span.green {
+  background: #66ff1e;
+}
+label span.cyan {
+  background: #07ffd2;
+}
+
+label span.blue {
+  background: #2185d0;
+}
+label span.violet {
+  background: #6435c9;
+}

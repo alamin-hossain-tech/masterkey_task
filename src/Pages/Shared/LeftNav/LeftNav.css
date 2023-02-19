@@ -1,0 +1,13 @@
+.menu-link {
+  position: relative;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 42px;
+  background-color: #09fb5b;
+  border-radius: 0px 5px 5px 0px;
+}
